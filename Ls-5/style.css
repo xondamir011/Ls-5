@@ -1,0 +1,72 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.container{
+max-width: 1200px;
+margin: 0 auto;
+}
+.parent{
+display: flex;
+justify-content: center;
+position: absolute;
+align-items: center;
+}
+.box{
+display: flex;  
+background-color: red;
+width: 400px;
+height: 400px;
+color: white;
+text-shadow: 3px 3px 3px white;
+font-size: 25px;
+align-items: center;
+justify-content: center;
+animation: sharof 3s infinite;
+position: relative;
+}
+@keyframes sharof{
+0%{
+background-color: red;
+width: 300px;
+height:300px;
+left: 0px;
+}
+
+25%{
+background-color: blue;
+width: 300px;
+height:300px;
+text-shadow: 2px 2px 2px black;
+font-size: 55px;
+left: 1236px;
+right: 0;
+top: 0px;
+}
+50%{
+background-color: green;
+width: 300px;
+height:300px;
+font-size: 45px;
+left: 1236px;
+top: 395px;
+
+}
+70%{
+background-color: aqua;
+width: 300px;
+height:300px;
+font-size: 35px;
+top: 395px;
+left: 0px;
+}
+100%{
+background-color: violet;
+width: 300px;
+height:300px;
+font-size: 25px;
+top: 0px;
+}
+
+}
